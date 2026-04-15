@@ -8,9 +8,9 @@ app.get('/api/consultar-saldo/:cuenta', (req, res) => {
 
     // Aquí es donde, en la vida real, te conectarías al AS400.
     // Simulamos el log del sistema:
-    console.log(`[INTEGRACIÓN] Recibida petición web para la cuenta: ${numeroCuenta}`);
-    console.log(`[AS400-BRIDGE] Ejecutando CALL PGM(GETSALDO) PARM('${numeroCuenta}') en DB2...`);
-    console.log(`[AS400-BRIDGE] Respuesta recibida del AS400 con éxito.`);
+    // console.log(`[INTEGRACIÓN] Recibida petición web para la cuenta: ${numeroCuenta}`);
+    // console.log(`[AS400-BRIDGE] Ejecutando CALL PGM(GETSALDO) PARM('${numeroCuenta}') en DB2...`);
+    // console.log(`[AS400-BRIDGE] Respuesta recibida del AS400 con éxito.`);
 
     // Devolvemos la respuesta al usuario web en formato JSON
     res.json({
